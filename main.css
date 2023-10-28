@@ -1,0 +1,636 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* STYLING FOR THE HEADER AND NAV */
+#active{
+    color: #47b2e4;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background: #204078;
+    padding: 1em 3em;
+    align-items: center;
+    position: fixed;
+    width: 95%;
+    z-index: 100;
+}
+.logo{
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+}
+#burgermenu{
+    display: none;
+}
+nav{
+    display: flex;
+}
+nav a:hover{
+    color: #47b2e4;
+}
+nav ul{
+    list-style: none;
+}
+nav ul a{
+    text-decoration: none;
+    color: white;
+}
+nav .menu-list{
+    display: flex;
+    gap: 2em;
+}
+nav .menu-list .deep-list, nav .menu-list .deeper-list{
+    position: absolute;
+    background: white;
+    box-shadow: 0 0 10px lightgray;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    display: none;
+}
+nav .menu-list .deep-list li, nav .menu-list .deeper-list li{
+    margin-bottom: 1em;
+}
+nav .menu-list .deep-list li a:hover, nav .menu-list .deeper-list li a:hover{
+    color: #47b2e4;
+}
+nav .menu-list .deeper-list{
+    width: 103%;
+    left: 9.5em;
+}
+nav .menu-list .deep-list a{
+    color: black;
+}
+.dropdown, .deepdropdown{
+    transition: 1s;
+}
+.dropdown:hover .deep-list, .deepdropdown:hover .deeper-list{
+    display: block;
+}
+.get-started{
+    border: 2px solid #47b2e4;
+    padding: 0.5em 1em;
+    border-radius: 5em;
+    transition: 0.2s;
+    font-weight: bold;
+}
+.get-started a:hover{
+    color: white;
+}
+.get-started:hover{
+    background: #47b2e4;
+}
+
+/* STYLING FOR THE BANNER */
+#banner{
+    background: #37517e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 6em;
+}
+.banner-text{
+    width: 50%;
+    margin-top: 5em;
+}
+#banner .banner-title{
+    color: white;
+    font-size: 3.2em;
+}
+#banner .banner-short{
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: lighter;
+    font-size: 1.5em;
+    margin-bottom: 3em;
+}
+#banner .banner-links a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-right: 1em;
+}
+#banner .banner-links a:nth-child(1){
+    border-radius: 2em;
+    padding: 1em 1.5em;
+    background: #47b2e4;
+    transition: 0.5s;
+}
+#banner .banner-links a:nth-child(1):hover{
+    background: #2e91be
+}
+.banner-img{
+    width: 45%;
+    margin-top: 3em;
+}
+.banner-img img{
+    width: 100%;
+}
+/* DRY STYLING FOR THE DIFFERENT SECTIONS */
+.division{
+    padding: 5em 7em;
+}
+
+/* STYLING FOR THE CLIENT DIV */
+.client-div{
+    background: #efefef;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 3em;
+}
+.client-div img{
+    display: inline-block;
+    width: 6%;
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+.client-div img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+/* STYLING FOR THE ABOUT US SECTION */
+.section-title{
+    text-align: center;
+    font-size: 2em;
+    color: #37517e;
+    font-weight: bold;
+}
+.section-title::before{
+    content: '';
+    position: relative;
+    top: 50px;
+    left: 49.25%;
+    width: 1em;
+    height: 3px;
+    background: #47b2e4;
+    display: block;
+    z-index: 1;
+}
+.section-title::after{
+    content: '';
+    position: relative;
+    top: 10px;
+    left: 46%;
+    width: 4em;
+    height: 1px;
+    background: lightgray;
+    display: block;
+}
+.about-us-text{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    padding: 2em 0;
+}
+.about-us-1 p{
+    margin-bottom: 2em;
+    text-align: justify;
+}
+.about-us-1 ul{
+    list-style-type: disc;
+    margin-left: 10%;
+}
+.about-us-2 a{
+    text-decoration: none;
+    display: block;
+    color: #47b2e4;
+    width: 20%;
+    text-align: center;
+    padding: 0.8em;
+    border-radius: 0.3em;
+    border: 2px solid #47b2e4;
+    transition: 0.4s;
+    margin-top: 2.3em;
+    font-size: 0.9em;
+}
+.about-us-2 a:hover{
+    color: white;
+    background: #47b2e4;
+}
+.about-us-1, .about-us-2{
+    width: 49%;
+    color: rgb(77, 76, 76);
+    font-size: 1.15em;
+}
+.about-list li{
+    margin-bottom: 1em;
+}
+/* WHY US STYLING */
+.extra-stuff{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f1f1f1;
+}
+.extra-text, .extra-img{
+    width: 45%;
+}
+.extra-title-paragraph{
+    margin-bottom: 1em;
+}
+.extra-text .extra-title{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #37517e;
+}
+.why-list-item{
+    color: #47b2e4;
+    margin-bottom: 1em;
+}
+.extra-text ul li{
+    background: white;
+    margin-bottom: 1em;
+    padding: 1em;
+    list-style-type: none;
+}
+.extra-img img{
+    width: 100%;
+}
+
+/* SKILLS STYLING */
+.skills{
+    display: flex;
+    justify-content: space-between;
+}
+.skills img{
+    width: 50%;
+}
+.skills .skills-index{
+    width: 50%;
+}
+.skills .skills-index .skill-title{
+    font-size: 2em;
+    color: #37517e;
+    font-weight: bolder;
+}
+
+/* SERVICES STYLING */
+.services{
+    margin: 3em 0;
+    background: #f1f1f1;
+    padding-top: 2em;
+    padding-bottom: 3.5em;
+}
+.services::after{
+    content: '';
+    display: block;
+    clear: both;
+    height: 10%;
+}
+.services .description{
+    margin-top: 2em;
+    text-align: center;
+}
+.services-div{
+    box-shadow: 0 0 20px rgb(193, 190, 190);
+    width: 17em;
+    height: 10em;
+    background: white;
+    padding: 2em 1em;
+    transition: 0.5s;
+    float: left;
+    margin-top: 2em;
+    margin-left: 1em;
+}
+.services-div:hover{
+    transform: translateY(-10px);
+}
+.services-div h1{
+    transition: 0.5s;
+    font-size: 1.7em;
+    margin-bottom: 1em;
+    color: #4d6ea7;
+}
+.services-div:hover h1{
+    color: #70a1f5;
+}
+
+/* CALL TO ACTION STYLING */
+.call-to-action{
+    background: #204078;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.call-to-action-text{
+    width: 70%;
+}
+.call-to-action h1{
+    font-weight: bolder;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+.call-to-action p{
+    font-size: 1.15em;
+}
+.call-to-action a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 3em;
+    padding: 1em 3em;
+    transition: 0.4s;
+}
+.call-to-action a:hover{
+    background: #47b2e4;
+    border: 2px solid #47b2e4;
+}
+
+
+/* MEDIA QUERIES */
+/* MEDIA QUERY FOR THE HEADER AND NAV */
+@media screen and (max-width: 950px){
+    header, nav, nav .menu-list{
+        display: block;
+    }
+    nav{
+        background: white;
+        border-radius: 0.5em;
+        padding: 2em;
+        width: 80%;
+        border: 2px solid red;
+        margin: 0 auto;
+    }
+    .logo{
+        display: block;
+        margin-bottom: 1em;
+    }
+    .menu-list li{
+        margin-bottom: 1em;
+        display: block;
+        width: 100%;
+    }
+    .menu-list li a{
+        color: black;
+    }
+
+    .deep-list, .deeper-list{
+        position: relative !important;
+        background: white;
+        box-shadow: 0 0 10px lightgray;
+        border-radius: 0.5em;
+        padding: 0.5em;
+        width: 100%;
+    }
+    .deeper-list{
+        left: 0 !important;
+        width: 95% !important;
+        margin: 1em auto;
+    }
+    .get-started{
+        width: 95% !important;
+    }
+    header{
+        width: 100%;
+        max-height: 2em;
+        overflow: hidden;
+        padding: 1em 0.5em;
+        transition: 0.7s;
+    }
+    #burgermenu{
+        display: block;
+        width: 2em;
+        position: relative;
+        left: 85%;
+        top: -4.3em;
+        cursor: pointer;
+    }
+    .open{
+        max-height: 40em;
+    }
+
+    /* BANNER STYLING */
+    #banner{
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 0;
+        padding: 3em;
+    }
+    .banner-text{
+        width: 100%;
+        text-align: center;
+        margin-top: 2em;
+    }
+    .banner-text h1:nth-child(1){
+        font-size: 2em !important;
+    }
+    .banner-text h1:nth-child(2){
+        font-size: 1.2em !important;
+        margin-top: 1em;
+        margin-bottom: 2em !important;
+    }
+    .banner-img{
+        width: 80%;
+        margin-top: 9em;
+    }
+
+    /* CLIENT DIV STYLING */
+    .client-div{
+        display: block;
+    }
+    .client-div:after{
+        content: '';
+        display: block;
+        height: 100%;
+        clear: both;
+    }
+    .client-div img{
+        width: 15%;
+        float: left;
+        margin-left: 0.5em;
+    }
+
+    /* ABOUT US STYLING */
+    .section-title{
+        text-align: center;
+        font-size: 2em;
+        color: #37517e;
+        font-weight: bold;
+    }
+    .section-title::before{
+        content: '';
+        position: relative;
+        top: 50px;
+        left: 47.25%;
+        width: 1em;
+        height: 3px;
+        background: #47b2e4;
+        display: block;
+        z-index: 1;
+    }
+    .section-title::after{
+        content: '';
+        position: relative;
+        top: 10px;
+        left: 38%;
+        width: 4em;
+        height: 1px;
+        background: lightgray;
+        display: block;
+    }
+    .about-us{
+        padding: 2em;
+    }
+    .about-us-text{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-us-1, .about-us-2{
+        width: 100%;
+        font-size: 1.1em;
+    }
+    .about-us-2{
+        margin-top: 2em;
+    }
+
+    /* WHY US STYLING */
+    .extra-stuff{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        background: #f1f1f1;
+        padding: 1em;
+    }
+    .extra-text, .extra-img{
+        width: 100%;
+    }
+    .extra-img{
+        margin-bottom: 3em;
+    }
+    .extra-title-paragraph{
+        margin-bottom: 1em;
+    }
+    .extra-text .extra-title{
+        font-size: 2em;
+        margin-bottom: 0.5em;
+        color: #37517e;
+    }
+    .why-list-item{
+        color: #47b2e4;
+        margin-bottom: 1em;
+    }
+    .extra-img img{
+        width: 100%;
+    }
+
+    /* SKILLS STYLING */
+    .skills{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+    }
+    .skills img{
+        width: 100%;
+        margin-bottom: 3em;
+    }
+    .skills .skills-index{
+        width: 100%;
+    }
+
+    /* SERVICES STYLING */
+    .services{
+        margin: 3em 0;
+        background: #f1f1f1;
+        padding-top: 2em;
+        padding-bottom: 3.5em;
+    }
+    .services::after{
+        content: '';
+        display: block;
+        clear: both;
+        height: 10%;
+    }
+    .services .description{
+        margin-top: 2em;
+        text-align: center;
+    }
+    .services-div{
+        box-shadow: 0 0 20px rgb(193, 190, 190);
+        width: 100%;
+        height: 10em;
+        background: white;
+        padding: 2em 1em;
+        transition: 0.5s;
+        float: left;
+        margin-top: 2em;
+        margin-left: 1em;
+    }
+    .services-div:hover{
+        transform: translateY(-10px);
+    }
+    .services-div h1{
+        transition: 0.5s;
+        font-size: 1.7em;
+        margin-bottom: 1em;
+        color: #4d6ea7;
+    }
+    .services-div:hover h1{
+        color: #70a1f5;
+    }
+
+        /* CALL TO ACTION STYLING */
+    .call-to-action{
+        background: #4d6ea7;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .call-to-action-text{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+    .call-to-action h1{
+        font-weight: bolder;
+        font-size: 2em;
+    }
+    .call-to-action a{
+        text-decoration: none;
+        color: white;
+        border: 2px solid white;
+        border-radius: 3em;
+        padding: 1em 3em;
+        transition: 0.4s;
+    }
+    .call-to-action a:hover{
+        background: #47b2e4;
+        border: 2px solid #47b2e4;
+    }
+
+}
+
+/* EXTRA MEDIA QUERIES FOR SMALLER SCREENS */
+@media screen and (max-width: 550px) {
+      /* BANNER STYLING */
+      #banner{
+        padding: 1.5em;
+    }
+    .banner-text{
+        font-size: 1em;
+    }
+    .banner-text h1:nth-child(1){
+        font-size: 1.5em !important;
+    }
+    .banner-text h1:nth-child(2){
+        font-size: 1em !important;
+        margin-bottom: 1em !important;
+        margin-top: 1em;
+    }
+    .banner-img{
+        width: 80%;
+        margin-top: 9em;
+    }
+}
+
