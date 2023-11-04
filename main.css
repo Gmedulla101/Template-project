@@ -318,20 +318,14 @@ nav .menu-list .deep-list a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 12em;
+    height: 18em;
 }
 /* .call-to-action-cover{
 
 } */
-.call-to-action-cover:before{
-    content: '';
-    display: block;
-    background: #2452a1;
-    width: 100%;
-}
 .bluescreen{
     width: 100%;
-    height: 47%;
+    height: 60%;
     background: rgba(40, 58, 90, 0.9);
     z-index: 0;
     position: absolute;
@@ -364,6 +358,12 @@ nav .menu-list .deep-list a{
     border: 2px solid #47b2e4;
 }
 
+/* PORTFOLIO STYLING */
+.portfolio p{
+    margin-top: 2em;
+    text-align: center;
+}
+
 /* MEDIA QUERIES */
 /* MEDIA QUERY FOR THE HEADER AND NAV */
 @media screen and (max-width: 950px){
@@ -375,7 +375,6 @@ nav .menu-list .deep-list a{
         border-radius: 0.5em;
         padding: 2em;
         width: 80%;
-        border: 2px solid red;
         margin: 0 auto;
     }
     .logo{

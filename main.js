@@ -11,5 +11,13 @@ function burgerClick() {
 };
 
 burger.addEventListener("click", burgerClick);
-/* burger.setAttribute("src", "images/close-line.svg");
-burger.setAttribute("src", "images/menu-line.svg"); */
+
+/* ADDING THE DYNAMICS TO THE HEADER LINKS */
+const headerLinks = document.querySelectorAll(".headerLink");
+console.log(headerLinks)
+headerLinks.forEach((header) => {
+  header.addEventListener('click', (event) => {
+    header.id = "active";
+  })
+});
+
