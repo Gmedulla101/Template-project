@@ -384,13 +384,21 @@ nav .menu-list .deep-list a{
 /* PORTFOLIO SECTION STYLING */
 .images-block{
     border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .images-block .images{
-    border: 2px solid red;
-    width: 50%;
+    width:30%;
+    overflow: hidden;
+    margin: 1em;
 }
 .images img{
     width: 100%;
+    transition: 0.5s;
+}
+.images:hover img{
+    transform: scale(1.2);
 }
 
 /* MEDIA QUERIES */
