@@ -381,6 +381,18 @@ nav .menu-list .deep-list a{
     color: white;
 }
 
+/* PORTFOLIO SECTION STYLING */
+.images-block{
+    border: 2px solid red;
+}
+.images-block .images{
+    border: 2px solid red;
+    width: 50%;
+}
+.images img{
+    width: 100%;
+}
+
 /* MEDIA QUERIES */
 /* MEDIA QUERY FOR THE HEADER AND NAV */
 @media screen and (max-width: 950px){
