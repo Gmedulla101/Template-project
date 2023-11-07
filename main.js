@@ -21,3 +21,64 @@ headerLinks.forEach((header) => {
   })
 });
 
+/* ADDING SELECTIVE PAGES FOR THE PORTFOLIOS */
+//PULLING THE TABS FROM THE DOM
+const allTab = document.querySelector('#all-tab');
+const appTab = document.querySelector('#app-tab');
+const cardTab = document.querySelector('#card-tab');
+const webTab = document.querySelector('#web-tab');
+
+//PULLING THE TAB ITEMS FROM THE DOM
+const app = document.querySelectorAll(".app");
+const card = document.querySelectorAll(".card");
+const web = document.querySelectorAll(".web");
+
+//ADDING EVENT LISTENERS TO ALL TABS
+allTab.addEventListener('click', (event) => {
+  app.forEach((appItem) => {
+    appItem.style.display = "block";
+  });
+  card.forEach((cardItem) => {
+    cardItem.style.display = "block";
+  });
+  web.forEach((webItem) => {
+    webItem.style.display = "block";
+  });
+});
+
+appTab.addEventListener('click', (event) => {
+  app.forEach((appItem) => {
+    appItem.style.display = "block";
+  });
+  card.forEach((cardItem) => {
+    cardItem.style.display = "none";
+  });
+  web.forEach((webItem) => {
+    webItem.style.display = "none";
+  });
+});
+
+cardTab.addEventListener('click', (event) => {
+  app.forEach((appItem) => {
+    appItem.style.display = "none";
+  });
+  card.forEach((cardItem) => {
+    cardItem.style.display = "block";
+  });
+  web.forEach((webItem) => {
+    webItem.style.display = "none";
+  });
+});
+
+webTab.addEventListener('click', (event) => {
+  app.forEach((appItem) => {
+    appItem.style.display = "none";
+  });
+  card.forEach((cardItem) => {
+    cardItem.style.display = "none";
+  });
+  web.forEach((webItem) => {
+    webItem.style.display = "block";
+  });
+});
+

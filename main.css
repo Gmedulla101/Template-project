@@ -392,6 +392,7 @@ nav .menu-list .deep-list a{
     width:30%;
     overflow: hidden;
     margin: 1em;
+    transition: 1s;
 }
 .images img{
     width: 100%;
