@@ -383,7 +383,6 @@ nav .menu-list .deep-list a{
 
 /* PORTFOLIO SECTION STYLING */
 .images-block{
-    border: 2px solid red;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -688,12 +687,25 @@ nav .menu-list .deep-list a{
         color: white;
     }
 
+    /* PORTFOLIO SECTION STYLING */
+    .images-block{
+        display: block;
+    }
+    .images-block .images{
+        width:90%;
+    }
+
 
 
 }
 
 /* EXTRA MEDIA QUERIES FOR SMALLER SCREENS */
 @media screen and (max-width: 550px) {
+    body{
+        width: 100%;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
       /* BANNER STYLING */
       #banner{
         padding: 1.5em;
@@ -728,12 +740,11 @@ nav .menu-list .deep-list a{
         padding: 1.5em;
     }
     .bluescreen{
-        height: 46%;
+        height: 45%;
     }
 
     /* PORTFOLIO STYLING */
     .portfolio{
-        border: 2px solid red;
         padding: 2em;
     }
     .portfolio p{
@@ -745,8 +756,7 @@ nav .menu-list .deep-list a{
         list-style-type: none;
         display: flex;
         justify-content: space-between;
-        width: 40%;
-        margin: 2em auto;
+        width: 100%;
     }
     #dynamicLinkList li{
         padding: 1em 2em;
