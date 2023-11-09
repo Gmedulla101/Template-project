@@ -14,11 +14,54 @@ burger.addEventListener("click", burgerClick);
 
 /* ADDING THE DYNAMICS TO THE HEADER LINKS */
 const headerLinks = document.querySelectorAll(".headerLink");
-console.log(headerLinks)
-headerLinks.forEach((header) => {
-  header.addEventListener('click', (event) => {
-    header.id = "active";
-  })
+console.log(headerLinks);
+headerLinks[0].addEventListener('click', (event) => {
+  headerLinks[0].id = "active";
+  headerLinks[1].id = "";
+  headerLinks[2].id = "";
+  headerLinks[3].id = "";
+  headerLinks[4].id = "";
+  headerLinks[5].id = "";
+});
+headerLinks[1].addEventListener('click', (event) => {
+  headerLinks[0].id = "";
+  headerLinks[1].id = "active";
+  headerLinks[2].id = "";
+  headerLinks[3].id = "";
+  headerLinks[4].id = "";
+  headerLinks[5].id = "";
+});
+headerLinks[2].addEventListener('click', (event) => {
+  headerLinks[0].id = "";
+  headerLinks[1].id = "";
+  headerLinks[2].id = "active";
+  headerLinks[3].id = "";
+  headerLinks[4].id = "";
+  headerLinks[5].id = "";
+});
+headerLinks[3].addEventListener('click', (event) => {
+  headerLinks[0].id = "";
+  headerLinks[1].id = "";
+  headerLinks[2].id = "";
+  headerLinks[3].id = "active";
+  headerLinks[4].id = "";
+  headerLinks[5].id = "";
+});
+headerLinks[4].addEventListener('click', (event) => {
+  headerLinks[0].id = "";
+  headerLinks[1].id = "";
+  headerLinks[2].id = "";
+  headerLinks[3].id = "";
+  headerLinks[4].id = "active";
+  headerLinks[5].id = "";
+});
+headerLinks[5].addEventListener('click', (event) => {
+  headerLinks[0].id = "";
+  headerLinks[1].id = "";
+  headerLinks[2].id = "";
+  headerLinks[3].id = "";
+  headerLinks[4].id = "";
+  headerLinks[5].id = "active";
 });
 
 /* ADDING SELECTIVE PAGES FOR THE PORTFOLIOS */
