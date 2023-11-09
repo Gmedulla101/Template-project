@@ -44,8 +44,10 @@ allTab.addEventListener('click', (event) => {
   web.forEach((webItem) => {
     webItem.style.display = "block";
   });
-  allTab.style.backgroundColor = "#47b2e4"
-  allTab.style.color = "white";
+  allTab.id = "selected"
+  webTab.id = ""
+  cardTab.id = ""
+  appTab.id = ""
 });
 
 appTab.addEventListener('click', (event) => {
@@ -58,8 +60,10 @@ appTab.addEventListener('click', (event) => {
   web.forEach((webItem) => {
     webItem.style.display = "none";
   });
-  appTab.style.backgroundColor = "#47b2e4"
-  appTab.style.color = "white";
+  allTab.id = ""
+  appTab.id = "selected"
+  cardTab.id = ""
+  webTab.id = ""
 });
 
 cardTab.addEventListener('click', (event) => {
@@ -72,8 +76,10 @@ cardTab.addEventListener('click', (event) => {
   web.forEach((webItem) => {
     webItem.style.display = "none";
   });
-  cardTab.style.backgroundColor = "#47b2e4"
-  cardTab.style.color = "white";
+  allTab.id = ""
+  appTab.id = ""
+  cardTab.id = "selected"
+  webTab.id = ""
 });
 
 webTab.addEventListener('click', (event) => {
@@ -86,7 +92,9 @@ webTab.addEventListener('click', (event) => {
   web.forEach((webItem) => {
     webItem.style.display = "block";
   });
-  webTab.style.backgroundColor = "#47b2e4"
-  webTab.style.color = "white";
+  allTab.id = ""
+  appTab.id = ""
+  cardTab.id = ""
+  webTab.id = "selected"
 });
 
