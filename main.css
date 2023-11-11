@@ -390,17 +390,15 @@ nav .menu-list .deep-list a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    border: 2px solid red;
 }
 .images-block .images{
-    width:30%;
+    width: 100%;
     height:fit-content;
     overflow: hidden;
     margin: 1em;
     margin-bottom: 0;
     transition: 1s;
     z-index: 0;
-    border: 2px solid red;
 }
 .images img{
     width: 100%;
@@ -416,14 +414,23 @@ nav .menu-list .deep-list a{
     z-index: 10000;
     background: #204078;
     color: white;
-    width: 85%;
+    width: 92%;
     margin: 1em;
     margin-top: 0;
     padding: 1em;
-    opacity: 0.8;
+    opacity: 0.7;
     position: relative;
     top: -5em;
     transition: 0.5s;
+    display: none;
+}
+.portfolio-container{
+    width: 30%;
+    height: fit-content;
+}
+.portfolio-container:hover .description{
+    transition: 0.5s;
+    display: block;
 }
 
 /* MEDIA QUERIES */
