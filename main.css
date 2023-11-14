@@ -22,7 +22,7 @@ header{
     align-items: center;
     position: fixed;
     width: 95%;
-    z-index: 100;
+    z-index: 100000000;
 }
 .logo{
     color: white;
@@ -390,6 +390,7 @@ nav .menu-list .deep-list a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 100%;
 }
 .images-block .images{
     width: 100%;
@@ -405,24 +406,24 @@ nav .menu-list .deep-list a{
     transition: 0.5s;
     z-index: 0;
 }
-.images:hover img{
-    transform: scale(1.2);
-}
 
 
-.description{
+ .description{
     z-index: 10000;
     background: #204078;
     color: white;
-    width: 92%;
-    margin: 1em;
-    margin-top: 0;
-    padding: 1em;
+    width: 100%;
+    margin: 0;
+    padding: 1em 0 1em 0;
     opacity: 0.7;
     position: relative;
-    top: -5em;
+    top: -2.5em;
     transition: 0.5s;
-    display: none;
+    opacity: 0;
+}
+.description-text{
+    width: 80%;
+    margin-left: 5%;
 }
 .portfolio-container{
     width: 30%;
@@ -430,7 +431,16 @@ nav .menu-list .deep-list a{
 }
 .portfolio-container:hover .description{
     transition: 0.5s;
+    opacity: 0.9;
+}
+.portfolio-container:hover .images img{
+    transform: scale(1.2);
+    z-index: 0;
+}
+.portfolio-container::after{
+    content: '';
     display: block;
+    height: 2em;
 }
 
 /* MEDIA QUERIES */
@@ -724,7 +734,19 @@ nav .menu-list .deep-list a{
         display: block;
     }
     .images-block .images{
-        width:90%;
+        width: 100%;
+    }
+    .description{
+        width: 100%;
+    }
+    .portfolio-container{
+        width: 80%;
+        height: fit-content;
+        margin: 1em auto;
+    }
+    .portfolio-container:hover .description{
+        transition: 0.5s;
+        display: block;
     }
 
 
@@ -732,7 +754,7 @@ nav .menu-list .deep-list a{
 }
 
 /* EXTRA MEDIA QUERIES FOR SMALLER SCREENS */
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
     body{
         width: 100%;
         overflow-x: hidden;
