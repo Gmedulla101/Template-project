@@ -553,6 +553,9 @@ nav .menu-list .deep-list a{
 .pricing-plan ul li{
     margin-bottom: 1em;
     font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
 }
 
 .pricing-link a{
@@ -570,6 +573,11 @@ nav .menu-list .deep-list a{
 .pricing-plans{
     display: flex;
     gap: 1.5em;
+}
+
+.pricing-plan:first-of-type ul li:nth-child(4), .pricing-plan:first-of-type ul li:nth-child(5){
+    text-decoration: line-through;
+    opacity: 0.6;
 }
 /* MEDIA QUERIES */
 /* MEDIA QUERY FOR THE HEADER AND NAV */
