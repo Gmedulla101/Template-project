@@ -529,6 +529,9 @@ nav .menu-list .deep-list a{
 }
 .price-details{
     margin-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 .pricing-plan p:first-of-type{
     color: #204078;
@@ -566,7 +569,7 @@ nav .menu-list .deep-list a{
 }
 .pricing-plans{
     display: flex;
-    gap: 1em;
+    gap: 1.5em;
 }
 /* MEDIA QUERIES */
 /* MEDIA QUERY FOR THE HEADER AND NAV */
@@ -882,7 +885,15 @@ nav .menu-list .deep-list a{
         width: 90%;
     }
 
-
+    /* PRICING SECTION STYLING */
+.pricing-plans{
+    display: block;
+    gap: 1.5em;
+}
+.pricing-plan{
+    width: 60%;
+    margin: 2em auto;
+}
 
 
 }
@@ -961,6 +972,15 @@ nav .menu-list .deep-list a{
     .team{
         padding: 0.3em;
     }
+
+    /* PRICING SECTION STYLING */
+    .pricing{
+        padding: 0;
+    }
+    .pricing-plan{
+        width: 70%;
+        margin: 2em auto;
+    }
 }
 
 @media screen and (max-width: 440px){
@@ -969,6 +989,9 @@ nav .menu-list .deep-list a{
     }
     .bluescreen{
         height: 45%;
+    }
+    .team-div{
+        width: 85%;
     }
 }
 
