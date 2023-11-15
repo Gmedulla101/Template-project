@@ -579,6 +579,31 @@ nav .menu-list .deep-list a{
     text-decoration: line-through;
     opacity: 0.6;
 }
+
+/* FAQ STYLING */
+.faqs{
+  background: #f1f1f1;
+}
+.faq{
+    background: white;
+    margin-bottom: 2em;
+    padding: 0.8em 2em;
+    width: 80%;
+    margin: 1em auto;
+}
+.faq-title{
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    justify-content: space-between;
+}
+.faq-title span:first-of-type{
+    color: #47b2e4;
+}
+
+
 /* MEDIA QUERIES */
 /* MEDIA QUERY FOR THE HEADER AND NAV */
     @media screen and (max-width: 950px){
