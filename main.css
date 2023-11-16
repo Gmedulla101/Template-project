@@ -147,7 +147,7 @@ nav .menu-list .deep-list a{
 .client-div{
     background: #efefef;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 1em 3em;
 }
@@ -161,6 +161,7 @@ nav .menu-list .deep-list a{
     filter: grayscale(0);
     transform: scale(1.1);
 }
+
 
 /* STYLING FOR THE ABOUT US SECTION */
 .section-title{
@@ -689,10 +690,9 @@ nav .menu-list .deep-list a{
         width: 80%;
         margin-top: 9em;
     }
-
     /* CLIENT DIV STYLING */
     .client-div{
-        display: block;
+        display: flex;
     }
     .client-div:after{
         content: '';
@@ -701,7 +701,7 @@ nav .menu-list .deep-list a{
         clear: both;
     }
     .client-div img{
-        width: 15%;
+        width: 10%;
         float: left;
         margin-left: 0.5em;
     }
@@ -957,6 +957,18 @@ nav .menu-list .deep-list a{
         width: 80%;
         margin-top: 9em;
     }
+
+            /* CLIENT DIV STYLING */
+            .client-div{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+            .client-div img{
+                width: 20%;
+                margin: 1em;
+            }
 
       /* SERVICES STYLING */
       .services{
