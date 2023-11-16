@@ -631,69 +631,76 @@
             <p class="section-p">
                 Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
             </p>
-            <section class="contact-details">
-               <span class="detail">
-
-                <span class="detail-text">
-                    <h2>
-                        Location:
-                    </h2>
-                    <p>
-                        A108 Adam Street, New York, NY 535022
-                    </p>
-                </span>
-               </span>
-
-               <span class="detail">
-
-                <span class="detail-text">
-                    <h2>
-                        Email:
-                    </h2>
-                    <p>
-                        info@example.com
-                    </p>
-                </span>
-               </span>
-
-               <span class="detail">
-
-                <span class="detail-text">
-                    <h2>
-                        Call:
-                    </h2>
-                    <p>
-                        +1 5589 55488 55s
-                    </p>
-                </span>
-               </span>
+            <section class="contact-container">
+                <section class="contact-details">
+                    <span class="detail">
+     
+                     <span class="detail-text">
+                         <h2>
+                             Location:
+                         </h2>
+                         <p>
+                             A108 Adam Street, New York, NY 535022
+                         </p>
+                     </span>
+                    </span>
+     
+                    <span class="detail">
+     
+                     <span class="detail-text">
+                         <h2>
+                             Email:
+                         </h2>
+                         <p>
+                             info@example.com
+                         </p>
+                     </span>
+                    </span>
+     
+                    <span class="detail">
+     
+                     <span class="detail-text">
+                         <h2>
+                             Call:
+                         </h2>
+                         <p>
+                             +1 5589 55488 55s
+                         </p>
+                     </span>
+                    </span>
+                 </section>
+     
+                 <!-- MAKING THE CONTACT FORM -->
+                 <section class="contact-form">
+                     <form action="#">
+                         <div class="details">
+                             <div>
+                                 <label for="name"> Your Name </label>
+                                 <input type="text" id="name" name="name">
+                             </div>
+                             <div>
+                                 <label for="email"> Your Email </label>
+                                 <input type="email" required id="email" name="email">
+                             </div>
+                         </div>
+                         <div class="content">
+                             <div>
+                                 <label for="subject"> Subject </label>
+                                 <input type="text" id="subject" name="subject">
+                             </div>
+                             <div>
+                                 <label for="message"> Message </label>
+                                 <textarea type="text" id="message" name="message"></textarea>
+                             </div>
+                         </div>
+     
+                         <button class="submit-form">
+                             Send Message
+                         </button>
+                     </form>
+                 </section>
             </section>
-
-            <!-- MAKING THE CONTACT FORM -->
-            <section class="contact-form">
-                <form action="#">
-                    <div class="details">
-                        <span>
-                            <label for="name"> Your Name </label>
-                            <input type="text" id="name" name="name">
-                        </span>
-                        <span>
-                            <label for="email"> Your Email </label>
-                            <input type="email" required id="email" name="email">
-                        </span>
-                    </div>
-                    <div class="content">
-                        <span>
-                            <label for="subject"> Subject </label>
-                            <input type="text" id="subject" name="subject">
-                        </span>
-                        <span>
-                            <label for="message"> Message </label>
-                            <input type="text" id="message" name="message">
-                        </span>
-                    </div>
-                </form>
-            </section>
+           
         </section>
 
      

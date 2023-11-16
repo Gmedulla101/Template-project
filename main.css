@@ -606,12 +606,20 @@ nav .menu-list .deep-list a{
 }
 
 /* CONTACT SECTION STYLING */
-.contact-details{
-    width: 40%;
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-details, .contact-form{
+    width: 35%;
     margin-top: 5em;
     box-shadow: 0 0 10px lightgray;
     padding: 2em;
     border-top: 3px solid #47b2e4;
+    border-bottom: 3px solid #47b2e4;
+}
+.contact-form{
+    width: 50%;
 }
 .detail{
     display: block;
@@ -622,6 +630,52 @@ nav .menu-list .deep-list a{
     margin-bottom: 0.5em;
 }
 
+/* STYLING FOR THE CONTACT FORM */
+.contact-form form label, .contact-form form input{
+    display: block;
+}
+.contact-form form .details{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+.contact-form form .details div label, .contact-form form .content div label{
+    margin-bottom: 1em auto;
+    font-size: 1.2em;
+}
+.contact-form form .details div input, .contact-form form .content div input, #message{
+    height: 1.5em;
+    width: 100%;
+    border: 2px solid lightgray;
+    border-radius: 0.3em;
+    outline: none;
+    padding: 0.5em;
+    font-size: 1.1em;
+}
+.contact-form form .content{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+#message{
+    height: 10em;
+    resize: none;
+}
+.submit-form{
+    display: block;
+    font-size: 1.1em;
+    padding: 0.7em 2em;
+    border-radius: 2em;
+    border: 2px solid #47b2e4;
+    background: #47b2e4;
+    color: white;
+    margin: 2em auto;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.submit-form:hover{
+    background: #3498c7;
+}
 
 /* MEDIA QUERIES */
 /* MEDIA QUERY FOR THE HEADER AND NAV */
