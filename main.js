@@ -14,7 +14,6 @@ burger.addEventListener("click", burgerClick);
 
 /* ADDING THE DYNAMICS TO THE HEADER LINKS THE LONG WAY*/
 const headerLinks = document.querySelectorAll(".headerLink");
-console.log(headerLinks);
 headerLinks[0].addEventListener('click', (event) => {
   headerLinks[0].id = "active";
   headerLinks[1].id = "";
