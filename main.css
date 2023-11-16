@@ -605,6 +605,23 @@ nav .menu-list .deep-list a{
     color: #47b2e4;
 }
 
+/* CONTACT SECTION STYLING */
+.contact-details{
+    width: 40%;
+    margin-top: 5em;
+    box-shadow: 0 0 10px lightgray;
+    padding: 2em;
+    border-top: 3px solid #47b2e4;
+}
+.detail{
+    display: block;
+    margin-bottom: 2em;
+}
+.detail-text h2{
+    color: #204078;
+    margin-bottom: 0.5em;
+}
+
 
 /* MEDIA QUERIES */
 /* MEDIA QUERY FOR THE HEADER AND NAV */
