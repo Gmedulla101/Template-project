@@ -634,6 +634,7 @@ nav .menu-list .deep-list a{
 .contact-form form label, .contact-form form input{
     display: block;
 }
+
 .contact-form form .details{
     display: flex;
     margin-bottom: 2em;
@@ -680,7 +681,43 @@ nav .menu-list .deep-list a{
 .submit-form:hover{
     background: #3498c7;
 }
+.contact-form form div input:focus, #message:focus{
+    border: 2px solid #47b2e4;
+}
 
+/* NEWSLETTER SECTION STYLING */
+.newsletter{
+    background: #f1f1f1;
+}
+.newsletter h2{
+    color: #204078;
+    text-align: center;
+}
+.newsletter form{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5em;
+}
+.newsletter form input{
+    font-size: 1.1em;
+    padding: 0.8em;
+    border-style: none;
+    border-radius: 2em;
+    box-shadow: 0 0 10px lightgray;
+    width: 70%;
+    outline: none;
+}
+.newsletter form button{
+    font-size: 1.1em;
+    border-style: none;
+    background: #47b2e4;
+    color: white;
+    border-radius: 2em;
+    padding: 1em 2em;
+    position: relative;
+    left: -5em;
+    box-shadow: 0 0 10px gray;
+}
 /* MEDIA QUERIES */
 /* MEDIA QUERY FOR THE HEADER AND NAV */
     @media screen and (max-width: 950px){
