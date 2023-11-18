@@ -268,15 +268,46 @@ nav .menu-list .deep-list a{
     justify-content: space-between;
 }
 .skills img{
-    width: 50%;
+    width: 48%;
+    height: 40%;
 }
 .skills .skills-index{
-    width: 50%;
+    width: 48%;
 }
 .skills .skills-index .skill-title{
     font-size: 2em;
     color: #37517e;
     font-weight: bolder;
+}
+
+/* STYLING THE SKILLS INDEX */
+.index-text{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+}
+.meter{
+    height: 0.7em;
+    width: 100%;
+    background: #f1f1f1;
+    margin-bottom: 2.5em;
+}
+.html-meter, .css-meter, .js-meter, .ps-meter{
+    background: #204078;
+    height: 100%;
+}
+.css-meter{
+    width: 90%;
+}
+.js-meter{
+    width: 75%;
+}
+.ps-meter{
+    width: 55%;
+}
+.index-text p{
+    color: #204078;
 }
 
 /* SERVICES STYLING */
