@@ -1238,7 +1238,7 @@ nav .menu-list .deep-list a{
         width: 70%;
     }
     .bluescreen{
-        height: 45%;
+        height: 51%;
     }
     .team-div{
         width: 85%;
@@ -1246,6 +1246,14 @@ nav .menu-list .deep-list a{
 
     .faqs{
         padding: 0;
+    }
+    
+    .section-title::before{
+
+        left: 45%;
+    }
+    .section-title::after{
+        left: 30%;
     }
 
 }
