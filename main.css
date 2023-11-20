@@ -6,6 +6,40 @@
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+/* GENERAL CLASSES */
+
+/* DRY STYLING FOR THE DIFFERENT SECTIONS */
+.division{
+    padding: 5em 5em;
+}
+
+.section-title{
+    text-align: center;
+    font-size: 2em;
+    color: #37517e;
+    font-weight: bold;
+}
+.section-title::before{
+    content: '';
+    position: relative;
+    top: 50px;
+    left: 49.25%;
+    width: 1em;
+    height: 3px;
+    background: #47b2e4;
+    display: block;
+    z-index: 1;
+}
+.section-title::after{
+    content: '';
+    position: relative;
+    top: 10px;
+    left: 46%;
+    width: 4em;
+    height: 1px;
+    background: lightgray;
+    display: block;
+}
 
 /* STYLING FOR THE HEADER AND NAV */
 #active{
@@ -138,10 +172,6 @@ nav .menu-list .deep-list a{
 .banner-img img{
     width: 100%;
 }
-/* DRY STYLING FOR THE DIFFERENT SECTIONS */
-.division{
-    padding: 5em 7em;
-}
 
 /* STYLING FOR THE CLIENT DIV */
 .client-div{
@@ -164,33 +194,6 @@ nav .menu-list .deep-list a{
 
 
 /* STYLING FOR THE ABOUT US SECTION */
-.section-title{
-    text-align: center;
-    font-size: 2em;
-    color: #37517e;
-    font-weight: bold;
-}
-.section-title::before{
-    content: '';
-    position: relative;
-    top: 50px;
-    left: 49.25%;
-    width: 1em;
-    height: 3px;
-    background: #47b2e4;
-    display: block;
-    z-index: 1;
-}
-.section-title::after{
-    content: '';
-    position: relative;
-    top: 10px;
-    left: 46%;
-    width: 4em;
-    height: 1px;
-    background: lightgray;
-    display: block;
-}
 .about-us-text{
     display: flex;
     justify-content: space-between;
@@ -428,20 +431,31 @@ nav .menu-list .deep-list a{
 }
 
 /* PORTFOLIO SECTION STYLING */
+.portfolio{
+    position: relative;
+}
 .images-block{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
+    position: relative;
 }
+
 .images-block .images{
-    width: 100%;
-    height:fit-content;
+    width: 30%;
+    height: fit-content;
     overflow: hidden;
-    margin: 1em;
-    margin-bottom: 0;
+    margin: 0.5em;
     transition: 1s;
     z-index: 0;
+    display: inline-block;
+}
+.images-block .images:hover img{
+    transform: scale(1.1);
+}
+.images-block .images:hover .description{
+    opacity: 0.85;
 }
 .images img{
     width: 100%;
@@ -449,42 +463,36 @@ nav .menu-list .deep-list a{
     z-index: 0;
 }
 
-
- .description{
+.description{
     z-index: 10000;
     background: #204078;
     width: 100%;
     margin: 0;
     padding: 1em 0 1em 0;
     opacity: 0.7;
-    position: relative;
-    top: -1.5em;
     transition: 0.5s;
     opacity: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .description-text{
     width: 80%;
     margin-left: 5%;
 }
+.description-text h2{
+    font-size: 1.3em;
+}
 .description-text h2, .description-text p {
     color: white;
 }
-.portfolio-container{
-    width: 30%;
-    height: fit-content;
+.description-img{
+  text-align: center;
 }
-.portfolio-container:hover .description{
-    transition: 0.5s;
-    opacity: 0.9;
-}
-.portfolio-container:hover .images img{
-    transform: scale(1.2);
-    z-index: 0;
-}
-.portfolio-container::after{
-    content: '';
-    display: block;
-    height: 2em;
+.description-img a{
+    display: inline-block;
+    width: 13%;
+    margin-right: 1em;
 }
 
 /* TEAM SECTION STYLING */
@@ -724,10 +732,15 @@ nav .menu-list .deep-list a{
     color: #204078;
     text-align: center;
 }
+
+.form-div{
+    margin: 2em auto;
+}
+
 .newsletter form{
     display: flex;
     justify-content: center;
-    margin-top: 2.5em;
+    margin: 2.5em auto;
 }
 .newsletter form input{
     font-size: 1.1em;
@@ -737,6 +750,8 @@ nav .menu-list .deep-list a{
     box-shadow: 0 0 10px lightgray;
     width: 70%;
     outline: none;
+    position: relative;
+    left: 2.5em;
 }
 .newsletter form button{
     font-size: 1.1em;
@@ -746,11 +761,21 @@ nav .menu-list .deep-list a{
     border-radius: 2em;
     padding: 1em 2em;
     position: relative;
-    left: -5em;
+    left: -2.5em;
     box-shadow: 0 0 10px gray;
 }
 /* MEDIA QUERIES */
 /* MEDIA QUERY FOR THE HEADER AND NAV */
+@media screen and (max-width: 1000px){
+    .division{
+        padding: 5em 2em;
+    }
+    .team{
+        padding: 5em 5em;
+    }
+}
+
+
     @media screen and (max-width: 950px){
     header, nav, nav .menu-list{
         display: block;
@@ -1035,23 +1060,8 @@ nav .menu-list .deep-list a{
     }
 
     /* PORTFOLIO SECTION STYLING */
-    .images-block{
-        display: block;
-    }
     .images-block .images{
-        width: 100%;
-    }
-    .description{
-        width: 100%;
-    }
-    .portfolio-container{
-        width: 80%;
-        height: fit-content;
-        margin: 1em auto;
-    }
-    .portfolio-container:hover .description{
-        transition: 0.5s;
-        display: block;
+        width: 40%;
     }
 
     /* TEAM SECTION STYLING */
@@ -1087,6 +1097,7 @@ nav .menu-list .deep-list a{
 }
 .contact-details, .contact-form {
     width: 85%;
+    margin: 2em auto;
 }
 .details{
     flex-direction: column;
@@ -1179,7 +1190,12 @@ nav .menu-list .deep-list a{
         background: #47b2e4;
         color: white;
     }
-
+    .images-block{
+        display: block;
+    }
+    .images-block .images {
+        width: 100%;
+    }
     /* TEAM DIV STYLING */
     .team{
         padding: 0.3em;
@@ -1247,7 +1263,7 @@ nav .menu-list .deep-list a{
     .faqs{
         padding: 0;
     }
-    
+
     .section-title::before{
 
         left: 45%;
