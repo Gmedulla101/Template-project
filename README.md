@@ -1,1 +1,1 @@
-This is a project where I replicate the UI and functionality of a concept business template. This is to showcase my skills in HTML, CSS and JavaScript and how tosse skills would apply in a real client request.
+This is a project where I replicate the UI and functionality of a concept business template. This is to showcase my skills in HTML, CSS and JavaScript and how those skills would apply in a real client request.
