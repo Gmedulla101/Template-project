@@ -690,7 +690,7 @@ nav .menu-list .deep-list a{
 .contact-form form .details div input, .contact-form form .content div input, #message{
     height: 1.5em;
     width: 100%;
-    border: 2px solid lightgray;
+    border: 1.5px solid lightgray;
     border-radius: 0.3em;
     outline: none;
     padding: 0.5em;
@@ -763,6 +763,57 @@ nav .menu-list .deep-list a{
     position: relative;
     left: -2.5em;
     box-shadow: 0 0 10px gray;
+}
+
+/* FOOTER STYLING */
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .footer-container{
+    width: 20%;
+    flex: 1 1 15%;
+}
+.list-header{
+    color: #204078;
+    margin-bottom: 1em;
+}
+
+footer .footer-container ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+footer .footer-container ul li img{
+    width: 8%;
+}
+
+footer .footer-container:nth-child(1) p:nth-child(2){
+    margin-bottom: 2em;
+}
+footer .footer-container p{
+    margin-bottom: 1em;
+}
+
+.socials{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1em;
+    margin-top: 2em;
+}
+.socials div{
+    background: #47b2e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4em;
+    height: 1.65em;
+    width: 2em;
+    border-radius: 50%;
 }
 /* MEDIA QUERIES */
 /* MEDIA QUERY FOR THE HEADER AND NAV */
@@ -1106,6 +1157,17 @@ nav .menu-list .deep-list a{
     width: 100%;
 }
 
+    /* FOOTER STYLING */
+    footer .footer-container{
+        width: 20%;
+        flex: 1 1 40%;
+        margin: 1em;
+    }
+
+    footer .footer-container:nth-child(3), footer .footer-container:nth-child(4){
+        margin-top: 4em;
+    }
+
 
 }
 
@@ -1247,6 +1309,18 @@ nav .menu-list .deep-list a{
     .contact{
         padding: 2em;
     }
+
+        /* FOOTER STYLING */
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+footer .footer-container{
+    width: 60%;
+}
+
 }
 
 @media screen and (max-width: 440px){
@@ -1272,5 +1346,9 @@ nav .menu-list .deep-list a{
         left: 30%;
     }
 
+    /* FOOTER STYLING */
+    footer .footer-container{
+        width: 100%;
+    }
 }
 
