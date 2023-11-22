@@ -140,3 +140,20 @@ webTab.addEventListener('click', (event) => {
   webTab.id = "selected"
 });
 
+/* JS FOR THE EXTRA STUFF EXPANDABLE MENU */
+const extraExpandMenu = Array.from(document.querySelectorAll(".extra-text ul li"));
+const extraArrow = Array.from(document.querySelectorAll(".extra-text ul li span img"));
+console.log(extraArrow);
+extraExpandMenu.forEach((menu, i) => {
+  menu.addEventListener('click', function() {
+    if(menu.className === "closed") {
+      menu.style.height = "10em";
+      menu.className = "expand-open";
+      menu.querySelector("span img").setAttribute('src', 'images/arrow-up.png')
+    } else if(menu.className === "expand-open") {
+      menu.style.height = "1.3em"
+      menu.className = "closed";
+      menu.querySelector("span img").setAttribute('src', 'images/down-arrow.png')
+    }
+  }
+)})
