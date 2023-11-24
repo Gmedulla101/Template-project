@@ -570,6 +570,18 @@ nav .menu-list .deep-list a{
     margin-top: 0.8em;
 }
 
+.social-contact{
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+}
+.social-contact span{
+    display: inline-block;
+    padding: 0.5em;
+    border-radius: 50%;
+    background: #e5e2e2;
+}
+
 @media screen and (max-width: 1040px){
     .team-div{
         width: 40%;
