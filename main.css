@@ -276,10 +276,12 @@ nav .menu-list .deep-list a{
     margin-bottom: 1em;
     padding: 1em;
     list-style-type: none;
-    height: 1.5em;
-    height: 1.5em;
+    height: 1.4em;
     overflow: hidden;
     transition: 0.3s;
+}
+.expand {
+    height: 10em;
 }
 .extra-img img{
     width: 100%;
@@ -1246,7 +1248,7 @@ footer .footer-container{
         width: 70%;
     }
     .bluescreen{
-        height: 51%;
+        height: 46;
     }
     .team-div{
         width: 85%;
@@ -1262,6 +1264,10 @@ footer .footer-container{
     }
     .section-title::after{
         left: 30%;
+    }
+    /* EXTRA STUFF (WHY US) SECTION */
+    .extra-text ul li{
+        height: 2.5em;
     }
 
     /* FOOTER STYLING */
