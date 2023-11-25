@@ -322,14 +322,17 @@ nav .menu-list .deep-list a{
     background: #204078;
     height: 100%;
 }
+.html-meter{
+    width: 1%;
+}
 .css-meter{
-    width: 90%;
+    width: 1%;
 }
 .js-meter{
-    width: 75%;
+    width: 1%;
 }
 .ps-meter{
-    width: 55%;
+    width: 1%;
 }
 .index-text p{
     color: #204078;

@@ -174,3 +174,23 @@ faqExpandMenu.forEach((menu, i) => {
 });
 
 
+/* JS FOR THE METERS */
+const meters = document.querySelectorAll(".meter");
+const meterValue = [100, 90, 75, 55];
+console.log(meterValue);
+function meterProgress() {
+  meters.forEach((meter, i) => {
+    const interval = setInterval (incrementor, 10);
+    let width = 0;
+    
+    function incrementor() {
+      if(width >= meterValue[i]) {
+        clearInterval(interval)
+      } else {
+        width++;
+        meter.querySelector("div").style.width = `${width}%`;
+      };
+    }
+    })
+};
+setTimeout(meterProgress, 1000);
