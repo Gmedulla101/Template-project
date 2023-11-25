@@ -171,4 +171,20 @@ faqExpandMenu.forEach((menu, i) => {
       menu.querySelector(".arrow-down img").setAttribute('src', 'images/down-arrow.png');
     }
   })
-})
+});
+
+/* JS FOR THE SKILL METERS */
+const indiciesValue = Array.from(document.querySelectorAll('.index .index-text p:nth-child(2)'));
+const meters = document.querySelectorAll(".meter");
+let width = 0;
+interval = setInterval(incrementor, 10);
+function incrementor() {
+  meters.forEach((meter, i) => {
+    if(width = indiciesValue[i].textContent){
+      clearInterval(interval);
+    } else {
+      width++
+      meter.querySelector("div").style.width = `${width}%`
+    }
+  })
+}
