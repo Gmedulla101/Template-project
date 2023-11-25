@@ -1,3 +1,4 @@
+/* JS FOR THE HEADER RESPONSIVENESS */
 const burger = document.querySelector("#burgermenu");
 const header = document.querySelector("header");
 function burgerClick() {
@@ -9,6 +10,16 @@ function burgerClick() {
     burger.setAttribute("src", "images/menu-line.svg");
   }
 };
+
+/* JS FOR THE DYNAMIC COLOR CHANGE OF THE HEADER DEPENDING ON VERTICAL SCROLL DISTANCE */
+/* window.addEventListener('scroll', (event) => {
+  let scrollPosition = window.scrollY;
+  if (scrollPosition > 100) {
+    header.style.backgroundColor = "rgba(40, 58, 90, 0.9);"
+  } else {
+    header.style.backgroundColor = "transparent";
+  }
+}) */
 
 burger.addEventListener("click", burgerClick);
 
