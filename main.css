@@ -670,7 +670,7 @@ nav .menu-list .deep-list a{
     transition: 0.3s;
     cursor: pointer;
 }
-.open{
+.readmore{
     height: 10em;
 }
 .faq-title{
@@ -1233,9 +1233,16 @@ footer .footer-container p{
       gap: 0.5em;
       justify-content: space-between;
   }
+
   .faq-title span:first-of-type{
-      color: #47b2e4;
-  }
+    color: black;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.faq-title span:first-of-type:hover{
+    color: #47b2e4;
+
+}
 .faqs .section-title::after{
     top: 0 !important;
 }

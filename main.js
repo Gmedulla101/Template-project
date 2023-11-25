@@ -164,7 +164,7 @@ const faqExpandMenu = document.querySelectorAll(".faq");
 faqExpandMenu.forEach((menu, i) => {
   menu.addEventListener('click', function() {
     if(menu.className.includes("closed")) {
-      menu.className = "faq open";
+      menu.className = "faq readmore";
       menu.querySelector(".arrow-down img").setAttribute('src', 'images/arrow-up.png');
     } else {
       menu.className = "faq closed";
