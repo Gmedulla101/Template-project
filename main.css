@@ -169,10 +169,32 @@ nav .menu-list .deep-list a{
 .banner-img{
     width: 45%;
     margin-top: 3em;
+    height: 26rem;
 }
 .banner-img img{
     width: 100%;
+    transition: 0.3s ease-in-out;
+    animation-name: bounce;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
+    position: absolute;
+    left: 0;
+    top: -1em;
 }
+
+/* BANNER KEYFRAMES */
+@keyframes bounce {
+    from{
+        transform: translateY(-20px);
+    }
+    to{
+        transform: translateY(20px);
+    }
+}
+
+
 
 /* STYLING FOR THE CLIENT DIV */
 .client-div{
@@ -292,6 +314,7 @@ nav .menu-list .deep-list a{
 .skills{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .skills img{
     width: 48%;

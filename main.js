@@ -10,17 +10,6 @@ function burgerClick() {
     burger.setAttribute("src", "images/menu-line.svg");
   }
 };
-
-/* JS FOR THE DYNAMIC COLOR CHANGE OF THE HEADER DEPENDING ON VERTICAL SCROLL DISTANCE */
-/* window.addEventListener('scroll', (event) => {
-  let scrollPosition = window.scrollY;
-  if (scrollPosition > 100) {
-    header.style.backgroundColor = "rgba(40, 58, 90, 0.9);"
-  } else {
-    header.style.backgroundColor = "transparent";
-  }
-}) */
-
 burger.addEventListener("click", burgerClick);
 
 /* ADDING THE DYNAMICS TO THE HEADER LINKS THE LONG WAY*/
@@ -188,7 +177,6 @@ faqExpandMenu.forEach((menu, i) => {
 /* JS FOR THE METERS */
 const meters = document.querySelectorAll(".meter");
 const meterValue = [100, 90, 75, 55];
-console.log(meterValue);
 function meterProgress() {
   meters.forEach((meter, i) => {
     const interval = setInterval (incrementor, 10);
@@ -204,4 +192,4 @@ function meterProgress() {
     }
     })
 };
-setTimeout(meterProgress, 1000);
+setTimeout(meterProgress, 3000);
