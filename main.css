@@ -665,6 +665,13 @@ nav .menu-list .deep-list a{
     padding: 0.8em 2em;
     width: 80%;
     margin: 1em auto;
+    height: 2em;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.open{
+    height: 10em;
 }
 .faq-title{
     font-size: 1.1em;
@@ -675,7 +682,13 @@ nav .menu-list .deep-list a{
     justify-content: space-between;
 }
 .faq-title span:first-of-type{
+    color: black;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.faq-title span:first-of-type:hover{
     color: #47b2e4;
+
 }
 
 /* CONTACT SECTION STYLING */
@@ -858,6 +871,7 @@ footer .footer-container p{
     .team{
         padding: 5em 5em;
     }
+
 }
 
 
@@ -1068,7 +1082,7 @@ footer .footer-container p{
 
     /* PORTFOLIO SECTION STYLING */
     .images-block .images{
-        width: 40%;
+        width: 45%;
     }
 
     /* TEAM SECTION STYLING */
@@ -1090,13 +1104,7 @@ footer .footer-container p{
 }
 
 /* FAQS SECTION STYLING */
-.faqs .section-title::before{
-    position: relative;
-    top: 2.73em;
-}
-.faqs .section-title::after{
-    position: relative;
-}
+
 
 /* CONTACT SECTION STYLING */
 .contact-container{
@@ -1229,13 +1237,20 @@ footer .footer-container p{
       color: #47b2e4;
   }
 .faqs .section-title::after{
-    position: relative;
-
+    top: 0 !important;
 }
 .faqs .section-title::before{
     position: relative;
-    top: 2.73em;
+    top: 2.43em !important;
 }
+
+.faqs .section-title::before{
+    top: 2em;
+}
+.faqs .section-title::after{
+   top: 0.75em;
+}
+
 
     /* CONTACT SECTION STYLING */
     .contact{

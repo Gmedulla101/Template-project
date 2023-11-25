@@ -142,18 +142,33 @@ webTab.addEventListener('click', (event) => {
 
 /* JS FOR THE EXTRA STUFF EXPANDABLE MENU */
 const extraExpandMenu = Array.from(document.querySelectorAll(".extra-text ul li"));
-const extraArrow = Array.from(document.querySelectorAll(".extra-text ul li span img"));
-console.log(extraArrow);
-extraExpandMenu.forEach((menu, i) => {
-  menu.addEventListener('click', function() {
-    if(menu.className === "closed") {
-      menu.style.height = "10em";
-      menu.className = "expand-open";
-      menu.querySelector("span img").setAttribute('src', 'images/arrow-up.png')
-    } else if(menu.className === "expand-open") {
-      menu.style.height = "1.3em"
-      menu.className = "closed";
-      menu.querySelector("span img").setAttribute('src', 'images/down-arrow.png')
-    }
+extraExpandMenu.forEach((menu) => {
+  menu.addEventListener('click', function () {
+    expandMenu(menu)
   }
-)})
+)});
+
+function expandMenu (item) {
+  if(item.className === "closed") {
+    item.style.height = "10em";
+    item.className = "expand-open";
+    item.querySelector("span img").setAttribute('src', 'images/arrow-up.png')
+  } else {
+    item.style.height = "1.3em"
+    item.className = "closed";
+    item.querySelector("span img").setAttribute('src', 'images/down-arrow.png')
+  }
+}
+/* JS FOR THE FAQ EXPANDABLE MENU */
+const faqExpandMenu = document.querySelectorAll(".faq");
+faqExpandMenu.forEach((menu, i) => {
+  menu.addEventListener('click', function() {
+    if(menu.className.includes("closed")) {
+      menu.className = "faq open";
+      menu.querySelector(".arrow-down img").setAttribute('src', 'images/arrow-up.png');
+    } else {
+      menu.className = "faq closed";
+      menu.querySelector(".arrow-down img").setAttribute('src', 'images/down-arrow.png');
+    }
+  })
+})
