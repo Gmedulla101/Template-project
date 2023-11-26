@@ -135,7 +135,7 @@ nav .menu-list .deep-list a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5em 6em;
+    padding: 5em 4em;
 }
 .banner-text{
     width: 50%;
@@ -167,9 +167,8 @@ nav .menu-list .deep-list a{
     background: #2e91be
 }
 .banner-img{
-    width: 45%;
+    width: 50%;
     margin-top: 3em;
-    height: 26rem;
 }
 .banner-img img{
     width: 100%;
@@ -179,9 +178,6 @@ nav .menu-list .deep-list a{
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-delay: 2s;
-    position: absolute;
-    left: 0;
-    top: -1em;
 }
 
 /* BANNER KEYFRAMES */
@@ -987,6 +983,7 @@ footer .footer-container p{
     .banner-img{
         width: 80%;
         margin-top: 5em;
+        margin-bottom: 2em;
     }
     /* CLIENT DIV STYLING */
     .client-div{
