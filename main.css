@@ -742,6 +742,10 @@ nav .menu-list .deep-list a{
     margin-bottom: 0.5em;
 }
 
+.map iframe{
+    width: 100%;
+}
+
 /* STYLING FOR THE CONTACT FORM */
 .contact-form form label, .contact-form form input{
     display: block;

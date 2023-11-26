@@ -12,6 +12,17 @@ function burgerClick() {
 };
 burger.addEventListener("click", burgerClick);
 
+/* JS FOR THE NAV ACTIVE STATE ON SCROLL */
+const dynamicHeader = () => {
+  const position = window.scrollY;
+  if(Math.floor(position ) > 4) {
+    header.classList.add("Theader");
+  } else {
+    header.classList.remove('Theader');
+  }
+}
+window.addEventListener('scroll', dynamicHeader);
+
 /* ADDING THE DYNAMICS TO THE HEADER LINKS THE LONG WAY*/
 const headerLinks = document.querySelectorAll(".headerLink");
 headerLinks[0].addEventListener('click', (event) => {
@@ -63,17 +74,25 @@ headerLinks[5].addEventListener('click', (event) => {
   headerLinks[5].id = "active";
 });
 
-/* JS FOR THE NAV ACTIVE STATE ON SCROLL */
-console.log(header);
-const dynamicHeader = () => {
-  const position = window.scrollY;
-  if(Math.floor(position ) > 4) {
-    header.classList.add("Theader");
-  } else {
-    header.classList.remove('Theader');
-  }
-}
-window.addEventListener('scroll', dynamicHeader)
+/* JS FOR THE SCROLL EFFECT ON CLICKING THE NAVLINKS */
+const divisions = Array.from(document.querySelectorAll(".division"));
+const sectionId = divisions.filter((division) => {
+  return division.id;
+})
+console.log(sectionId);
+sectionId.forEach((section) => {
+  
+})
+const aboutDistance = 732.7999877929688;
+const servicesDistance = 2398.39990234375;
+const portfolioDistance = 3437.60009765625;
+const teamDistance = 5091.2001953125;
+const contactDistance = 7524.7998046875;
+
+
+
+
+
 
 /* ADDING SELECTIVE PAGES FOR THE PORTFOLIOS */
 //PULLING THE TABS FROM THE DOM
