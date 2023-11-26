@@ -79,7 +79,6 @@ const divisions = Array.from(document.querySelectorAll(".division"));
 const sectionId = divisions.filter((division) => {
   return division.id;
 })
-console.log(sectionId);
 sectionId.forEach((section) => {
   
 })
