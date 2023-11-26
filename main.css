@@ -67,6 +67,7 @@ header{
     color: white;
     text-decoration: none;
     font-size: 2em;
+    width: 10%;
 }
 #burgermenu{
     display: none;
