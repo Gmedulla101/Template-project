@@ -1,3 +1,4 @@
+/* JS FOR THE HEADER RESPONSIVENESS */
 const burger = document.querySelector("#burgermenu");
 const header = document.querySelector("header");
 function burgerClick() {
@@ -9,8 +10,18 @@ function burgerClick() {
     burger.setAttribute("src", "images/menu-line.svg");
   }
 };
-
 burger.addEventListener("click", burgerClick);
+
+/* JS FOR THE NAV ACTIVE STATE ON SCROLL */
+const dynamicHeader = () => {
+  const position = window.scrollY;
+  if(Math.floor(position ) > 4) {
+    header.classList.add("Theader");
+  } else {
+    header.classList.remove('Theader');
+  }
+}
+window.addEventListener('scroll', dynamicHeader);
 
 /* ADDING THE DYNAMICS TO THE HEADER LINKS THE LONG WAY*/
 const headerLinks = document.querySelectorAll(".headerLink");
@@ -62,6 +73,26 @@ headerLinks[5].addEventListener('click', (event) => {
   headerLinks[4].id = "";
   headerLinks[5].id = "active";
 });
+
+/* JS FOR THE SCROLL EFFECT ON CLICKING THE NAVLINKS */
+const divisions = Array.from(document.querySelectorAll(".division"));
+const sectionId = divisions.filter((division) => {
+  return division.id;
+})
+console.log(sectionId);
+sectionId.forEach((section) => {
+  
+})
+const aboutDistance = 732.7999877929688;
+const servicesDistance = 2398.39990234375;
+const portfolioDistance = 3437.60009765625;
+const teamDistance = 5091.2001953125;
+const contactDistance = 7524.7998046875;
+
+
+
+
+
 
 /* ADDING SELECTIVE PAGES FOR THE PORTFOLIOS */
 //PULLING THE TABS FROM THE DOM
@@ -177,7 +208,6 @@ faqExpandMenu.forEach((menu, i) => {
 /* JS FOR THE METERS */
 const meters = document.querySelectorAll(".meter");
 const meterValue = [100, 90, 75, 55];
-console.log(meterValue);
 function meterProgress() {
   meters.forEach((meter, i) => {
     const interval = setInterval (incrementor, 10);
@@ -193,4 +223,4 @@ function meterProgress() {
     }
     })
 };
-setTimeout(meterProgress, 1000);
+setTimeout(meterProgress, 3000);

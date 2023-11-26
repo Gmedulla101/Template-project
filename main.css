@@ -52,12 +52,16 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    background: #204078;
+    background: transparent;
     padding: 1em 3em;
     align-items: center;
     position: fixed;
     width: 95%;
     z-index: 100000000;
+    transition: 0.4s;
+}
+.Theader {
+    background: rgba(40, 58, 90, 0.9);
 }
 .logo{
     color: white;
@@ -134,7 +138,7 @@ nav .menu-list .deep-list a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3em 6em;
+    padding: 5em 4em;
 }
 .banner-text{
     width: 50%;
@@ -166,12 +170,30 @@ nav .menu-list .deep-list a{
     background: #2e91be
 }
 .banner-img{
-    width: 45%;
+    width: 50%;
     margin-top: 3em;
 }
 .banner-img img{
     width: 100%;
+    transition: 0.3s ease-in-out;
+    animation-name: bounce;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
 }
+
+/* BANNER KEYFRAMES */
+@keyframes bounce {
+    from{
+        transform: translateY(-20px);
+    }
+    to{
+        transform: translateY(20px);
+    }
+}
+
+
 
 /* STYLING FOR THE CLIENT DIV */
 .client-div{
@@ -291,6 +313,7 @@ nav .menu-list .deep-list a{
 .skills{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .skills img{
     width: 48%;
@@ -719,6 +742,10 @@ nav .menu-list .deep-list a{
     margin-bottom: 0.5em;
 }
 
+.map iframe{
+    width: 100%;
+}
+
 /* STYLING FOR THE CONTACT FORM */
 .contact-form form label, .contact-form form input{
     display: block;
@@ -944,8 +971,8 @@ footer .footer-container p{
     #banner{
         flex-direction: column-reverse;
         justify-content: center;
-        padding: 0;
         padding: 3em;
+        height: 40rem;
     }
     .banner-text{
         width: 100%;
@@ -962,7 +989,8 @@ footer .footer-container p{
     }
     .banner-img{
         width: 80%;
-        margin-top: 9em;
+        margin-top: 5em;
+        margin-bottom: 2em;
     }
     /* CLIENT DIV STYLING */
     .client-div{
