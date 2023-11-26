@@ -52,13 +52,16 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    background: rgba(40, 58, 90, 0.9);
+    background: transparent;
     padding: 1em 3em;
     align-items: center;
     position: fixed;
     width: 95%;
     z-index: 100000000;
     transition: 0.4s;
+}
+.Theader {
+    background: rgba(40, 58, 90, 0.9);
 }
 .logo{
     color: white;

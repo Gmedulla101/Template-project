@@ -63,6 +63,18 @@ headerLinks[5].addEventListener('click', (event) => {
   headerLinks[5].id = "active";
 });
 
+/* JS FOR THE NAV ACTIVE STATE ON SCROLL */
+console.log(header);
+const dynamicHeader = () => {
+  const position = window.scrollY;
+  if(Math.floor(position ) > 4) {
+    header.classList.add("Theader");
+  } else {
+    header.classList.remove('Theader');
+  }
+}
+window.addEventListener('scroll', dynamicHeader)
+
 /* ADDING SELECTIVE PAGES FOR THE PORTFOLIOS */
 //PULLING THE TABS FROM THE DOM
 const allTab = document.querySelector('#all-tab');
