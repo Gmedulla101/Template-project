@@ -135,7 +135,7 @@ nav .menu-list .deep-list a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3em 6em;
+    padding: 5em 6em;
 }
 .banner-text{
     width: 50%;
@@ -968,8 +968,8 @@ footer .footer-container p{
     #banner{
         flex-direction: column-reverse;
         justify-content: center;
-        padding: 0;
         padding: 3em;
+        height: 40rem;
     }
     .banner-text{
         width: 100%;
@@ -986,7 +986,7 @@ footer .footer-container p{
     }
     .banner-img{
         width: 80%;
-        margin-top: 9em;
+        margin-top: 5em;
     }
     /* CLIENT DIV STYLING */
     .client-div{
