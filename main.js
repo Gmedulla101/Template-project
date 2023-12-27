@@ -1,16 +1,18 @@
 /* JS FOR THE HEADER RESPONSIVENESS */
+const header = document.querySelector('header');
 const burger = document.querySelector("#burgermenu");
-const header = document.querySelector("header");
-function burgerClick() {
-  if(header.className === "default"){
-    header.className = "open";
-    burger.setAttribute("src", "images/close-line.svg");
-  } else if(header.className === "open") {
-    header.className = "default";
-    burger.setAttribute("src", "images/menu-line.svg");
-  }
-};
-burger.addEventListener("click", burgerClick);
+const cancel = document.querySelector('#closeBtn');
+const modal = document.querySelector('#modal');
+
+//ADDING AN EVENT LISTENER TO THE BURGER BUTTON TO CALL THE MODAL
+burger.addEventListener("click", (event) => {
+  modal.style.display = "flex";
+});
+
+//ADDING AN EVENT LISTENER TO CLOSE THE MODAL
+cancel.addEventListener('click', (event) => {
+  modal.style.display = 'none';
+})
 
 /* JS FOR THE NAV ACTIVE STATE ON SCROLL */
 const dynamicHeader = () => {

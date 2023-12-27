@@ -17,7 +17,7 @@
         <a href="index.html" class="logo"> ARSHA </a>
         <img id="burgermenu" src="images/menu-line.svg" alt="">
 
-        <nav>
+        <nav class="defualtNav">
             <ul class="menu-list">
                 <li> <a href="#home" class="headerLink"> Home </a> </li>
                 <li> <a href="#about" class="headerLink"> About </a> </li>
@@ -47,6 +47,39 @@
     </header>
     <!-- HEADER ENDS -->
    
+    <!-- MODAL FOR SMALLER SCREENS -->
+    <div id="modal" class="closed">
+        <div id="closeBtn">
+            <img src="images/close-line.svg" alt="">
+        </div>
+        <nav id="modalNav">
+            <ul class="menu-list">
+                <li> <a href="#home" class="headerLink"> Home </a> </li>
+                <li> <a href="#about" class="headerLink"> About </a> </li>
+                <li> <a href="#services" class="headerLink"> Services </a> </li>
+                <li> <a href="#portfolio" class="headerLink"> Portfolio </a> </li>
+                <li> <a href="#team" class="headerLink"> Team </a> </li>
+                <li  class="dropdown"> <a href="#"> Drop Down ▼ </a>
+                    <ul class="deep-list">
+                        <li> <a href="#"> Drop down 1 </a> </li>
+                        <li class="deepdropdown"> <a href="#"> Deep drop down ► </a>
+                            <ul class="deeper-list">
+                                <li> <a href="#"> Deep drop down 1 </a> </li>
+                                <li> <a href="#"> Deep drop down 2 </a> </li>
+                                <li> <a href="#"> Deep drop down 3 </a> </li>
+                                <li> <a href="#"> Deep drop down 4 </a> </li>
+                                <li> <a href="#"> Deep drop down 5 </a> </li>
+                            </ul> </li>
+                        <li> <a href="#"> Drop down 2 </a> </li>
+                        <li> <a href="#"> Drop down 3 </a> </li>
+                        <li> <a href="#"> Drop down 4 </a> </li>
+                    </ul>
+                </li>
+                <li> <a href="#contact" class="headerLink"> Contact </a> </li>
+                <li class="get-started"> <a href="#about"> Get Started </a> </li>
+            </ul>
+        </nav>
+    </div>
 
     <!-- GETTING INTO THE MAIN SECTION -->
     <main id="home">

@@ -72,6 +72,9 @@ header{
 #burgermenu{
     display: none;
 }
+#modal {
+    display: none;
+}
 nav{
     display: flex;
 }
@@ -907,6 +910,28 @@ footer .footer-container p{
 
 
     @media screen and (max-width: 950px){
+
+    .defaultNav {
+        display: none;
+    }
+    #modal {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background: rgba(40, 58, 90, 0.9);
+        width: 100%;
+        height: 100%;
+        z-index: 1000000000000;
+    }
+    #closeBtn {
+        position: relative;
+        left: 48.5em;
+        top: -19em;
+        width: 3em;
+        height: 3em;
+        cursor: pointer;
+    }
     header, nav, nav .menu-list{
         display: block;
     }
@@ -963,9 +988,6 @@ footer .footer-container p{
         left: 85%;
         top: -4.3em;
         cursor: pointer;
-    }
-    .open{
-        max-height: 40em;
     }
 
     /* BANNER STYLING */
