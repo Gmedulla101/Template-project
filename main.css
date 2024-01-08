@@ -6,6 +6,10 @@
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}
 /* GENERAL CLASSES */
 
 /* DRY STYLING FOR THE DIFFERENT SECTIONS */
@@ -1322,6 +1326,19 @@ footer .footer-container p{
         padding: 2em;
     }
 
+    /* NEWSLETTER */
+    .newsletter form {
+        border: 2px solid red;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .newsletter form button {
+        border: 2px solid red;
+        margin: 1em auto;
+        display: block;
+    }
+
         /* FOOTER STYLING */
 footer{
     display: flex;
@@ -1366,5 +1383,14 @@ footer .footer-container{
     footer .footer-container{
         width: 100%;
     }
+
+    /* EMERGENCY CONTACT STYLING */
+/*     .contact {
+        border: 2px solid red;
+        padding: 1em;
+    }
+    .contact-details, .contact-form{
+        margin-right: 0
+    } */
 }
 
