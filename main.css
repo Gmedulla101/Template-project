@@ -915,15 +915,12 @@ footer .footer-container p{
         display: none;
     }
     #modal {
-        display: none;
         align-items: center;
         justify-content: center;
-        position: absolute;
         background: rgba(40, 58, 90, 0.9);
         width: 100%;
         height: 43em;
         z-index: 1000000000000;
-        padding: 0;
         position: fixed;
     }
     #closeBtn {
@@ -942,7 +939,9 @@ footer .footer-container p{
         border-radius: 0.5em;
         padding: 2em;
         width: 80%;
-        margin: 0 auto;
+        position: relative;
+        margin: 0;
+        left: -30px;
     }
     .logo{
         display: block;
